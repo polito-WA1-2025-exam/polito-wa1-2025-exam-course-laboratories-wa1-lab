@@ -1,0 +1,23 @@
+[
+    {
+        "name": "R",
+        "base_price": 9,
+        "amount_proteins": 1,
+        "amount_ingredients": 4,
+        "increase_percentage_ingredients": 20
+    },
+    {
+        "name": "M",
+        "base_price": 11,
+        "amount_proteins": 2,
+        "amount_ingredients": 4,
+        "increase_percentage_ingredients": 20
+    },
+    {
+        "name": "L",
+        "base_price": 14,
+        "amount_proteins": 3,
+        "amount_ingredients": 6,
+        "increase_percentage_ingredients": 20
+    }
+]

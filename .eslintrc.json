@@ -1,0 +1,16 @@
+{
+    "extends": ["eslint:recommended", "airbnb-base"],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "indent": ["error", 2],
+      "camelcase": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "no-console": "warn",
+      "arrow-parens": ["error", "as-needed"]
+    }
+  }
+  
