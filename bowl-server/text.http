@@ -1,0 +1,60 @@
+GET http://localhost:3000/user/auth/admin/admin
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/user/test123/retrieveOrders
+Content-Type: application/json
+
+###
+GET http://localhost:3000/bowlsLeft/R
+
+###
+POST http://localhost:3000/addBowls
+Content-Type: application/json
+
+{
+    "orderId":1, 
+    "size":"R", 
+    "base":"rice", 
+    "proteins": ["tuna"], 
+    "ingredients":["kale", "kale", "kale"], 
+    "nrBowls":1, 
+    "price":12
+}
+
+###
+POST http://localhost:3000/addUser
+Content-Type: application/json
+
+{ "username": "test123", "passwordHash": "test123"}
+
+###
+POST http://localhost:3000/addOrder
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "order": {
+    "bowls": [
+      {
+        "size": "R",
+        "base": "rice",
+        "ingredients": ["avocado", "mango", "salad", "carrots"],
+        "proteins": "tuna",
+        "nrBowls": 2,
+        "price": 18
+      },
+      {
+        "size": "R",
+        "base": "rice",
+        "ingredients": ["avocado", "mango", "salad", "carrots"],
+        "proteins": "chicken",
+        "nrBowls": 1,
+        "price": 9
+      }
+    ]
+  }
+}
+
+
